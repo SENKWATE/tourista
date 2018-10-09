@@ -3,19 +3,26 @@
 {% block title %}Detail{% endblock title %} 
 
 {% block content %}
+    <!-- <div class="bk"> -->
+    <br><br>
     <h1 id="title"><strong>{{destination.name}}</strong></h1>
+    <br><br>
+    <p><img id="edit_image" src="{{destination.pretty_picture.url}}"></p>
     <br>
     <h3 class="description"><li>Description:</li></h3>
     <p class="d_asnwer">{{destination.description}}</p>
     <h3 class="description2"><li>Activities:</li></h3>
     <p class="d_asnwer2">{{destination.activities}}</p>
-    <p><img id="edit_image" src="{{destination.pretty_picture.url}}"></p>
+    <!-- <p><img id="edit_image" src="{{destination.pretty_picture.url}}"></p> -->
     <p class = "d_answer3">{{destination.optimal_visiting_season}}</p>
 
     <a href="{% url 'destination-update' destination.id %}">
        <button type="button" class="btn btn-primary btn-lg">Update</button>
     </a>
-    <a href="{% url 'destination-delete' destination.id %}">
+    <a class="Bdelete" href="{% url 'destination-delete' destination.id %}">
         <button type="button" class="btn btn-secondary btn-lg">Delete</button>
     </a>
+
+
+    <!-- </div> -->
 {% endblock content %}

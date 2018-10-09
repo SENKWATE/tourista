@@ -3,11 +3,11 @@
 {% block title %}List{% endblock title %}
 
 {% block content %}
-<br>
+<!-- <br> -->
 <div class="row">
   {% for destination in destinations %}
   
-  <div class="col-12 col-md-6 col-lg-4 d-flex align-items-stretch">
+  <div class="m-3 col-12 col-md-6 col-lg-5 d-flex align-items-stretch">
     
       <div class="card">
         <a href="{% url 'destination-detail' destination.id %}">
