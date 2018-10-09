@@ -1,0 +1,28 @@
+#title {
+	color: black;
+	/*text-shadow: 3px 2px black;*/
+	font-family: arial-black;
+	font-size: 45px;
+	/*background-color: #75DAFE;*/
+	/*width: 38%; 
+	height: 80px;*/
+	/*border-radius: 25px;*/
+	/*text-align: center;
+	padding: 10px;*/
+	
+}
+
+.description, .description2 {
+	font-size: 30px;
+}
+
+
+.d_asnwer, .d_asnwer2, .d_answer3 {
+	font-size: 25px;
+}
+
+#edit_image {
+	width: 1000px;
+	height: 380px;
+}
+
